@@ -1,4 +1,5 @@
 /* UMSI Brand Colors */
+
 :root {
     --michigan-blue: #00274C;
     --michigan-maize: #FFCB05;
@@ -6,7 +7,10 @@
     --light-gray: #F5F5F5;
     --white: #FFFFFF;
     --text-color: #222222;
+    --border-color: #E0E0E0;
 }
+
+/* General Styles */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,9 +21,9 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 a {
@@ -51,26 +55,6 @@ h3 {
     font-weight: 700;
 }
 
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-main section {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #E0E0E0;
-}
-main h2 {
-    color: #00274C;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
 p {
     margin-bottom: 1rem;
 }
@@ -92,18 +76,20 @@ p {
     width: auto;
     height: auto;
     padding: 1rem;
-    background-color: #FFCB05;
-    color: #00274C;
+    background-color: var(--michigan-maize);
+    color: var(--michigan-blue);
     z-index: 1000;
 }
+
 /* Header */
 
 header {
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 90px minmax(0, 1fr);
     column-gap: 1rem;
     align-items: center;
     padding: 2rem 5% 1.5rem;
+    border-bottom: 4px solid var(--michigan-maize);
 }
 
 header > img {
@@ -122,68 +108,173 @@ header h1 {
     grid-column: 1 / -1;
     grid-row: 2;
     margin-top: 1.5rem;
+    color: var(--michigan-blue);
 }
-/* Navigation */
 
-nav {
-    margin-top: 1rem;
-}
+/* Navigation */
 
 nav ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
 }
 
 nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     min-height: 2.75rem;
     padding: 0.5rem 0.4rem;
-
     background-color: #F3F6F9;
-    color: #00274C;
-
+    color: var(--michigan-blue);
     text-align: center;
     text-decoration: none;
     font-size: 0.85rem;
     line-height: 1.3;
     font-weight: 600;
-
     border-radius: 0.25rem;
 }
+
 nav a.active {
-    background-color: #FFCB05;
-    color: #00274C;
+    background-color: var(--michigan-maize);
+    color: var(--michigan-blue);
     text-decoration: underline;
 }
 
+nav a:hover {
+    background-color: var(--light-blue);
+}
+
+nav a.active:hover {
+    background-color: var(--michigan-maize);
+}
+
+/* Main Content */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Major Sections */
+
+main > section {
+    padding: 2rem 0;
+    margin: 0;
+}
+
+main > section + section {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Section Headings */
+
+main h2 {
+    color: var(--michigan-blue);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    color: var(--michigan-blue);
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+}
+
+/* Articles */
+
+main article {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+
+main article h2,
+main article h3 {
+    margin-bottom: 0.75rem;
+}
+
+/* Lists */
+
+main ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+}
+
+/* Images */
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
 /* Responsive YouTube Video */
+
 iframe {
     display: block;
     width: 100%;
     max-width: 100%;
     aspect-ratio: 16 / 9;
-    height: unset;
+    height: auto;
     border: none;
     margin: 1rem 0;
 }
 
+/* Additional Content */
+
+main aside {
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background-color: var(--light-blue);
+    border-radius: 0.5rem;
+}
+
 /* Footer */
+
 footer {
-    background-color: #00274C;
-    color: #FFFFFF;
+    background-color: var(--michigan-blue);
+    color: var(--white);
     padding: 2rem 5%;
     text-align: center;
     margin-top: 2rem;
 }
 
 footer a {
-    color: #FFCB05;
+    color: var(--michigan-maize);
 }
 
 footer p {
     margin-bottom: 0.75rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+footer address {
+    margin-bottom: 0.75rem;
+    font-style: normal;
 }
