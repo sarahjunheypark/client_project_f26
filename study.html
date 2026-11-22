@@ -7,39 +7,41 @@
     <title>Student Research Opportunities | UMSI</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/site.js" defer></script>
+  <script src="js/site.js" defer></script>
 </head>
 
 <body>
     <header>
         <a href="#main" class="skip-link">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information" width="400" height="400">
 
-        <nav>
+        <nav aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="prep.html">Preparing for Your Experience</a></li>
                 <li><a href="start.html">Starting Your Experience</a></li>
-                <li><a href="study.html" class="active" aria-current="page">Student Research Opportunities</a></li>
+                <li><a href="study.html" aria-current="page">Student Research Opportunities</a></li>
             </ul>
         </nav>
 
         <h1>Student Research Opportunities</h1>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
 
-        <section>
-            <img src="images/UMSI_research" alt="Students and professor discussing research in a lab.">
-
-            <p>
+        <section class="intro">
+            <div class="intro-copy">
+                <h2>Explore Research Opportunities</h2>
+                <p>
                 Do research with interesting faculty and driven PhD students, gaining the kind of experience
                 that opens doors in academia and industry alike. You'll be exposed to cutting-edge methodologies
                 and technologies, while strengthening your problem-solving and critical thinking skills.
-            </p>
+                </p>
+            </div>
+            <img src="images/UMSI_research-1200.jpg" srcset="images/UMSI_research-640.jpg 640w, images/UMSI_research-1200.jpg 1200w" sizes="(min-width: 75rem) 540px, (min-width: 48rem) 44vw, 90vw" alt="Students and professor discussing research in a lab." width="1200" height="798" decoding="async">
         </section>
 
-        <section>
+        <section class="resource-grid">
             <h2>UMSI Research Opportunities</h2>
 
             <article>
@@ -111,7 +113,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="resource-grid">
             <h2>U-M Research Opportunities</h2>
 
             <article>
@@ -191,7 +193,7 @@
             <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
         </address>
 
-        <p>&copy; 2026 Regents of the University of Michigan</p>
+        <p>&copy; <span data-year>2026</span> Regents of the University of Michigan</p>
     </footer>
 
 </body>

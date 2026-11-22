@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resumes</title>
+  <title>Preparing Your Experience | UMSI</title>
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/site.js" defer></script>
@@ -14,11 +14,11 @@
 
   <header>
     <a href="#main" class="skip-link">Skip to Main Content</a>
-    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-    <nav>
+    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information" width="400" height="400">
+    <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="prep.html" class="active">Preparing for Your Experience</a></li>
+        <li><a href="prep.html" aria-current="page">Preparing for Your Experience</a></li>
         <li><a href="start.html">Starting Your Experience</a></li>
         <li><a href="study.html">Student Research Opportunities</a></li>
       </ul>
@@ -26,12 +26,14 @@
     <h1>Preparing for Your Experience</h1>
 
   </header>
-  <main id="main">
-    <section>
-      <h2>Launch Your Engaged Learning Journey</h2>
-      <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context,
-        evaluate team readiness, establish expectations, and begin a productive partnership.</p>
-      <img src="images/UMSI_study_03.jpg" alt="Students are talking in a commons room.">
+  <main id="main" tabindex="-1">
+    <section class="intro">
+      <div class="intro-copy">
+          <h2>Launch Your Engaged Learning Journey</h2>
+          <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context,
+          evaluate team readiness, establish expectations, and begin a productive partnership.</p>
+      </div>
+      <img src="images/UMSI_study_03-1200.jpg" srcset="images/UMSI_study_03-640.jpg 640w, images/UMSI_study_03-1200.jpg 1200w" sizes="(min-width: 75rem) 540px, (min-width: 48rem) 44vw, 90vw" alt="Students are talking in a commons room." width="1200" height="1803" decoding="async">
     </section>
 
     <section>
@@ -68,9 +70,9 @@
             assumptions, and privileges. Learn about the community's history and consider how power may affect
             participation and decision-making.
           </li>
-          <li><strong>Understand expectations:</strong> Review program requirements, project commitments,leadership
+          <li><strong>Understand expectations:</strong> Review program requirements, project commitments, leadership
             responsibilities, deadlines, and expected outcomes before beginning the work.</li>
-          <li><strong>Assess team readiness:</strong> Identify each team member's skills, interests, vailability,
+          <li><strong>Assess team readiness:</strong> Identify each team member's skills, interests, availability,
             responsibilities, and learning goals. Determine where the team may need additional knowledge or support.
           </li>
           <li><strong>Begin project scoping:</strong> Learn about the organization's needs, intended users, constraints,
@@ -101,7 +103,7 @@
             stakeholders, and broader social conditions.</li>
           <li><strong>Set learning goals:</strong> Record the technical, professional, interpersonal, and ethical skills
             you want to develop.</li>
-          <li><strong>Review team capacity:</strong>Compare the team's skills and availability with the likely needs of
+          <li><strong>Review team capacity:</strong> Compare the team's skills and availability with the likely needs of
             the project. </li>
           <li><strong>Identify open questions:</strong> Write down what your team needs to learn from the partner before
             confirming the project's scope, methods, or deliverables.
@@ -148,7 +150,7 @@
     <address>
       <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
     </address>
-    <p>&copy; 2026 Regents of the University of Michigan</p>
+    <p>&copy; <span data-year>2026</span> Regents of the University of Michigan</p>
   </footer>
 
 </body>
